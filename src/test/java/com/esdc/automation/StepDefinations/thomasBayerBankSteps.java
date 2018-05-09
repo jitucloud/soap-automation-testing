@@ -32,14 +32,11 @@ public class thomasBayerBankSteps {
        // File file = new File(getClass().getResource("/samples/bank-request1.xml").getFile());
         File request = new File("I:\\code\\playground\\cucumber\\comesdcautomation\\src\\test\\resources\\samples\\bank-request1.xml");
 
-
-
         RestUtil.setBaseURI("http://www.thomas-bayer.com"); //Setup Base URI
         RestUtil.setBasePath("/axis2/services/BLZService/"); // Setup Base Path
         RestUtil.setSoapActionHeader("getBank"); //Setup Soap Action
         RestUtil.setContentType(ContentType.XML);
-
-        res = RestUtil.getResponseAsPost(request); //Get response
+        res = RestUtil.getResponseAsPost(request1); //Get response
         xmlPath = RestUtil.getXMLPath(res); //Get XMLPath
         String plz = xmlPath.get("Envelope.Body.getBankResponse.details.plz").toString();
         String bic= xmlPath.get("Envelope.Body.getBankResponse.details.bic").toString();

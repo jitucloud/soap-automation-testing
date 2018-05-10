@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b93d2fab-dfea-4efc-af7d-185532cd9201" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/config/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/esdc/com/common/httpStatusHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/esdc/com/common/httpStatusHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/esdc/com/common/propertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/esdc/com/common/propertyReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/esdc/com/common/restUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/esdc/com/common/restUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/esdc/com/common/xmlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/esdc/com/common/xmlReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/queryAddress/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/esdc/com/stepDefs/thomasBayerBankSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/esdc/com/stepDefs/thomasBayerBankSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/esdc/com/common/httpStatusHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/esdc/com/common/httpStatusHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/esdc/com/common/propertyReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/esdc/com/common/propertyReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/esdc/com/common/restUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/esdc/com/common/restUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report-composite.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-composite.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/esdc/com/stepDefs/thomasBayerBankSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/esdc/com/stepDefs/thomasBayerBankSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/config/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +22,8 @@
       <file leaf-file-name="thomasBayerBankSteps.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/esdc/com/stepDefs/thomasBayerBankSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="36" column="107" selection-start-line="36" selection-start-column="99" selection-end-line="36" selection-end-column="107" />
+            <state relative-caret-position="281">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +58,11 @@
         <option value="$PROJECT_DIR$/src/test/resources/config/abc.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/esdc/com/common/restUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/esdc/com/stepDefs/thomasBayerBankSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/esdc/com/common/propertyReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/esdc/com/common/xmlReader.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config/queryAddress/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/config/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/esdc/com/stepDefs/thomasBayerBankSteps.java" />
       </list>
     </option>
   </component>
@@ -98,6 +95,36 @@
               <item name="comesdcautomation" type="b2602c69:ProjectViewProjectNode" />
               <item name="comesdcautomation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comesdcautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comesdcautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comesdcautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comesdcautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comesdcautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comesdcautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comesdcautomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comesdcautomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -124,11 +151,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="stepDefs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="comesdcautomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="comesdcautomation" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -142,6 +164,7 @@
       <recent name="I:\code\playground\cucumber\comesdcautomation\src\test\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\code\playground\cucumber\comesdcautomation\src\test\resources\config\queryAddress" />
       <recent name="I:\code\playground\cucumber\comesdcautomation\src\test\config" />
       <recent name="I:\code\playground\cucumber\comesdcautomation\src\test\resources\config" />
       <recent name="I:\code\playground\cucumber\comesdcautomation\src\main\java\config" />
@@ -250,34 +273,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 15h 21m 54s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 15h 22m 34s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 15h 58m 27s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 00m 13s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 03m 15s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 04m 24s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 06m 32s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 06m 52s.xml">
-      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 07m 35s.xml">
       <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 08m 36s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 27m 49s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 30m 48s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 31m 42s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 32m 35s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 33m 47s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 34m 10s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 39m 48s.xml">
+      <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="RunCukesByCompositionTest - 2018.05.10 at 16h 40m 43s.xml">
       <configuration name="RunCukesByCompositionTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -294,11 +317,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45802337" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36875665" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2015625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2015625" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -495,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/esdc/com/common/xmlReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/esdc/com/queryAddress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -670,36 +686,54 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/config/config123.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/config/config.properties">
+    <entry file="file://$PROJECT_DIR$/target/test-classes/config/queryAddress/config.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/esdc/com/common/xmlReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/esdc/com/common/restUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+        <state relative-caret-position="282">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="53" selection-end-line="63" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setContentTypeHeaderAsSoapXML#0;class#restUtil#0" />
+            <element signature="e#1898#1899#0" expanded="true" />
             <element signature="method#printResponseXML#0;class#restUtil#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/queryAddress/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/esdc/com/common/propertyReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="238">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -708,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/esdc/com/stepDefs/thomasBayerBankSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="36" column="107" selection-start-line="36" selection-start-column="99" selection-end-line="36" selection-end-column="107" />
+        <state relative-caret-position="281">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

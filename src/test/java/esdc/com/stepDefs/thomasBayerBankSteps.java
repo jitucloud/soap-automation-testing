@@ -20,8 +20,9 @@ import static org.testng.AssertJUnit.assertEquals;
 public class thomasBayerBankSteps {
 
     private Response res = null; //Response object
-    private queryAddress actualQueryAddressResponse = null; //XmlPath object
-
+    private queryAddress actualQueryAddressResponse = null; //actual queryAddressModel
+    private queryAddress expectedQueryAddressResponse = null;//expected queryAddressModel
+    private String configFolderName = "queryAddress";
     @Given("^Make the request to thomasBayer Bank Service$")
     public void Make_the_request_to_thomasBayer_Bank_Service() {
 
@@ -34,22 +35,22 @@ public class thomasBayerBankSteps {
                 "   </soap:Body>\n" +
                 "</soap:Envelope>";
 
+        System.out.println(propertyReader.GetAllProperty("config\\"+ configFolderName+ "\\config.properties").getProperty("database"));
         System.out.println(propertyReader.GetAllProperty("config\\config.properties").getProperty("database"));
 
         restUtil.setBaseURI("http://www.thomas-bayer.com"); //Setup Base URI
         restUtil.setBasePath("/axis2/services/BLZService/"); // Setup Base Path
         restUtil.setSoapActionHeader("getBank"); //Setup Soap Action
         restUtil.setContentType(ContentType.XML);
+
+        // Actual Response From Server
         res = restUtil.getResponseAsPost(request); //Get response
         actualQueryAddressResponse = new queryAddress(restUtil.getXMLPath(res)); //Get XMLPath
 
+        // Expected Response From XML
+        File expectedResponseFile = new File(Thread.currentThread().getContextClassLoader().getResource("").getPath() + "\\samples\\thomasBank\\bank-response1.xml");
+        expectedQueryAddressResponse = new queryAddress(new XmlPath(expectedResponseFile));
 
-//        File expectedResponse = new File("I:\\code\\playground\\cucumber\\comesdcautomation\\src\\test\\resources\\samples\\thomasBank\\bank-response1.xml");
-//        XmlPath xmlPath1 = new XmlPath(expectedResponse); //XmlPath object
-//        String plz1 = xmlPath1.get("Envelope.Body.getBankResponse.details.plz").toString();
-//        System.out.println(plz1);
-//        System.out.println(bic);
-//        System.out.println(plz);
 
     }
 
@@ -60,7 +61,7 @@ public class thomasBayerBankSteps {
 
     @Then("^Should be able to check details$")
     public void Should_be_able_to_check_details() {
-        assertEquals(actualQueryAddressResponse.GetBankDetailsPLZ(),"47003");
-        assertEquals(actualQueryAddressResponse.GetBankDetailsBIC(),"DEUTDEDE350");
+        assertEquals(actualQueryAddressResponse.GetBankDetailsPLZ(),expectedQueryAddressResponse.GetBankDetailsPLZ());
+        assertEquals(actualQueryAddressResponse.GetBankDetailsBIC(),expectedQueryAddressResponse.GetBankDetailsBIC());
     }
 }

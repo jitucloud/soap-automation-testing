@@ -45,26 +45,24 @@ public class restUtil {
         given().header("SOAPAction",ActionName);
     }
 
-    public static Response getResponse() {
+    public static Response getResponseAsGet() {
         return get();
     }
 
     public static Response getResponseAsPost(String SoapRequest) {
-        return given().body(SoapRequest).log().all().post();
+        return given().body(SoapRequest).post();
     }
 
     public static Response getResponseAsPost(File SoapRequest) {
-        return given().body(SoapRequest).log().all().post();
+        return given().body(SoapRequest).post();
     }
 
     public static JsonPath getJsonPath (Response res) {
-        String response = res.asString();
-        return new JsonPath(response);
+        return new JsonPath(res.asString());
     }
 
     public static XmlPath getXMLPath (Response res) {
-        String response = res.asString();
-        return new XmlPath(response);
+        return new XmlPath(res.asString());
     }
 
     public static  void printResponseXML(Response res){

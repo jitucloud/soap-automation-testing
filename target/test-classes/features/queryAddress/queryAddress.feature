@@ -4,6 +4,6 @@ Feature: Query Address
   I want to enter a play and see the correct answer
 
   Scenario: Get answers based on played numbers
-    Given I am officiating a FizzBuzz game
+    Given I am officiating a FizzBuzz123 game
     When the number 1 is played
     Then I should be told the correct answer is "1"

@@ -12,7 +12,7 @@ public class queryAddressSteps {
     private String _actualResult;
     @Given("^I am officiating a FizzBuzz123 game$")
     public void I_am_officiating_a_FizzBuzz_game() {
-        _target = new queryAddress();
+        _target = new queryAddress(null);
     }
     @When("^the number (\\d+) is played$")
     public void the_number_is_played(int playedNumber) {

@@ -1,5 +1,4 @@
 package esdc.com.common;
-
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.path.json.JsonPath;

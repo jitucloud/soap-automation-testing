@@ -6,14 +6,17 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import esdc.com.common.restUtil;
+import esdc.com.project.test.queryAddress;
 
 import java.io.File;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 
 public class thomasBayerBankSteps {
 
     private Response res = null; //Response object
-    private XmlPath xmlPath = null; //XmlPath object
+    private queryAddress queryAddressResponse = null; //XmlPath object
 
     @Given("^Make the request to thomasBayer Bank Service$")
     public void Make_the_request_to_thomasBayer_Bank_Service() {
@@ -33,28 +36,25 @@ public class thomasBayerBankSteps {
         restUtil.setSoapActionHeader("getBank"); //Setup Soap Action
         restUtil.setContentType(ContentType.XML);
         res = restUtil.getResponseAsPost(request1); //Get response
-        xmlPath = restUtil.getXMLPath(res); //Get XMLPath
-
-        String plz = xmlPath.get("Envelope.Body.getBankResponse.details.plz").toString();
-        String bic= xmlPath.get("Envelope.Body.getBankResponse.details.bic").toString();
+        queryAddressResponse = new queryAddress(restUtil.getXMLPath(res)); //Get XMLPath
 
 
-        File expectedResponse = new File("I:\\code\\playground\\cucumber\\comesdcautomation\\src\\test\\resources\\samples\\thomasBank\\bank-response1.xml");
-        XmlPath xmlPath1 = new XmlPath(expectedResponse); //XmlPath object
-        String plz1 = xmlPath1.get("Envelope.Body.getBankResponse.details.plz").toString();
-        System.out.println(plz1);
-        System.out.println(bic);
-        System.out.println(plz);
+//        File expectedResponse = new File("I:\\code\\playground\\cucumber\\comesdcautomation\\src\\test\\resources\\samples\\thomasBank\\bank-response1.xml");
+//        XmlPath xmlPath1 = new XmlPath(expectedResponse); //XmlPath object
+//        String plz1 = xmlPath1.get("Envelope.Body.getBankResponse.details.plz").toString();
+//        System.out.println(plz1);
+//        System.out.println(bic);
+//        System.out.println(plz);
 
     }
 
     @When("^check in the response if all okay$")
     public void check_in_the_response_if_all_okay() {
-
+        assertEquals(queryAddressResponse.GetBankDetailsPLZ(),"47003");
     }
 
     @Then("^Should be able to check details$")
     public void Should_be_able_to_check_details() {
-
+        assertEquals(queryAddressResponse.GetBankDetailsBIC(),"DEUTDEDE350");
     }
 }

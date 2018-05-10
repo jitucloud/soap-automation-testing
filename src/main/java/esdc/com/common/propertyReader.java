@@ -1,4 +1,6 @@
 package esdc.com.common;
 
-public class propertyReader {
+public  class  propertyReader {
+
+
 }

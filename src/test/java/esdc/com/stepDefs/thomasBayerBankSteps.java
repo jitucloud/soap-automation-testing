@@ -61,7 +61,7 @@ public class thomasBayerBankSteps {
 
     @Then("^Should be able to check details$")
     public void Should_be_able_to_check_details() {
-        assertEquals(actualQueryAddressResponse.GetBankDetailsPLZ(),expectedQueryAddressResponse.GetBankDetailsPLZ());
-        assertEquals(actualQueryAddressResponse.GetBankDetailsBIC(),expectedQueryAddressResponse.GetBankDetailsBIC());
+        assertEquals(actualQueryAddressResponse.getBankDetailsPLZ(),expectedQueryAddressResponse.getBankDetailsPLZ());
+        assertEquals(actualQueryAddressResponse.getBankDetailsBIC(),expectedQueryAddressResponse.getBankDetailsBIC());
     }
 }

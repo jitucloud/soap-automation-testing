@@ -5,6 +5,7 @@ import com.jayway.restassured.path.xml.XmlPath;
 public class queryAddress {
 
     XmlPath responseXML = null;
+
     public queryAddress(XmlPath queryAddressReponse){
         responseXML = queryAddressReponse;
     }
@@ -12,11 +13,11 @@ public class queryAddress {
         return Integer.toString(playedNumber);
     }
 
-    public String GetBankDetailsPLZ(){
+    public String getBankDetailsPLZ(){
             return  responseXML.get("Envelope.Body.getBankResponse.details.plz").toString();
     }
 
-    public String GetBankDetailsBIC(){
+    public String getBankDetailsBIC(){
         return  responseXML.get("Envelope.Body.getBankResponse.details.bic").toString();
     }
 

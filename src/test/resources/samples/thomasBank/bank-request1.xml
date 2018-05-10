@@ -1,0 +1,8 @@
+﻿<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:blz="http://thomas-bayer.com/blz">
+    <soap:Header/>
+    <soap:Body>
+        <blz:getBank>
+            <blz:blz>35070030</blz:blz>
+        </blz:getBank>
+    </soap:Body>
+</soap:Envelope>

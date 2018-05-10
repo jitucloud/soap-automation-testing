@@ -1,0 +1,194 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Get answers based on played numbers",
+        "description": "",
+        "id": "query-address;get-answers-based-on-played-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 127546017,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am officiating a FizzBuzz game",
+            "match": {
+              "location": "queryAddressSteps.I_am_officiating_a_FizzBuzz_game()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1770359,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the number 1 is played",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 11
+                }
+              ],
+              "location": "queryAddressSteps.the_number_is_played(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2017093,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be told the correct answer is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 40
+                }
+              ],
+              "location": "queryAddressSteps.I_should_be_told_the_correct_answer_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Query Address",
+    "description": "So that plays can be validated\r\nAs a Fizz Buzz umpire\r\nI want to enter a play and see the correct answer",
+    "id": "query-address",
+    "keyword": "Feature",
+    "uri": "queryAddress/queryAddress.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Get answers based on played numbers",
+        "description": "",
+        "id": "query-appointment;get-answers-based-on-played-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 485363,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am officiating a FizzBuzz game1",
+            "match": {
+              "location": "queryAppointmentSteps.I_am_officiating_a_FizzBuzz_game()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 83745,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the number 1 is played1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 11
+                }
+              ],
+              "location": "queryAppointmentSteps.the_number_is_played(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47125,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be told the correct answer is1 \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 41
+                }
+              ],
+              "location": "queryAppointmentSteps.I_should_be_told_the_correct_answer_is(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Query Appointment",
+    "description": "So that plays can be validated\r\nAs a Fizz Buzz umpire\r\nI want to enter a play and see the correct answer",
+    "id": "query-appointment",
+    "keyword": "Feature",
+    "uri": "queryAppointment/queryAppointment.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Get the Bank detail based on blz number",
+        "description": "",
+        "id": "check-if-bank-details-are-correct;get-the-bank-detail-based-on-blz-number",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2953747336,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Make the request to thomasBayer Bank Service",
+            "match": {
+              "location": "thomasBayerBankSteps.Make_the_request_to_thomasBayer_Bank_Service()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24013,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "check in the response if all okay",
+            "match": {
+              "location": "thomasBayerBankSteps.check_in_the_response_if_all_okay()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15308,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Should be able to check details",
+            "match": {
+              "location": "thomasBayerBankSteps.Should_be_able_to_check_details()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check if Bank Details are correct",
+    "description": "",
+    "id": "check-if-bank-details-are-correct",
+    "keyword": "Feature",
+    "uri": "thomasBank/thomasBayerBank.feature"
+  }
+]

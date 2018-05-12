@@ -6,13 +6,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import esdc.com.common.httpStatusHelper;
-import esdc.com.common.propertyReader;
 import esdc.com.common.restUtil;
 import esdc.com.project.test.queryAddress;
 
 import java.io.File;
-import java.util.Locale;
-import java.util.ResourceBundle;
+
 
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -35,27 +33,27 @@ public class thomasBayerBankSteps {
                 "   </soap:Body>\n" +
                 "</soap:Envelope>";
 
-        System.out.println(propertyReader.GetAllProperty("config\\"+ configFolderName+ "\\config.properties").getProperty("database"));
-        System.out.println(propertyReader.GetAllProperty("config\\config.properties").getProperty("database"));
-
-        restUtil.setBaseURI("http://www.thomas-bayer.com"); //Setup Base URI
+         restUtil.setBaseURI("http://www.thomas-bayer.com"); //Setup Base URI
         restUtil.setBasePath("/axis2/services/BLZService/"); // Setup Base Path
         restUtil.setSoapActionHeader("getBank"); //Setup Soap Action
         restUtil.setContentType(ContentType.XML);
 
         // Actual Response From Server
         res = restUtil.getResponseAsPost(request); //Get response
+       // restUtil.printResponseXML(res);
         actualQueryAddressResponse = new queryAddress(restUtil.getXMLPath(res)); //Get XMLPath
 
-        // Expected Response From XML
-        File expectedResponseFile = new File(Thread.currentThread().getContextClassLoader().getResource("").getPath() + "\\samples\\thomasBank\\bank-response1.xml");
-        expectedQueryAddressResponse = new queryAddress(new XmlPath(expectedResponseFile));
 
+
+       // Expected Response From XML
+        File file = new File(getClass().getClassLoader().getResource("samples/thomasBank/bank-response1.xml").getFile());
+        expectedQueryAddressResponse = new queryAddress(new XmlPath(file));
 
     }
 
     @When("^check in the response if all okay$")
     public void check_in_the_response_if_all_okay() {
+
         httpStatusHelper.checkStatusIs200(res);
     }
 

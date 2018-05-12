@@ -1,0 +1,10 @@
+<suite name="tvt">
+    <test name="tvt">
+        <!--<packages>-->
+            <!--<package name="esdc.com.stepDefs" />-->
+        <!--</packages>-->
+        <classes>
+            <class name="esdc.com.tvtTestRunner" />
+        </classes>
+    </test>
+</suite>

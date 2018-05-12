@@ -1,6 +1,7 @@
 package esdc.com.project.test;
 
 import com.jayway.restassured.path.xml.XmlPath;
+import com.jayway.restassured.path.xml.element.Node;
 
 public class queryAddress {
 
@@ -19,6 +20,11 @@ public class queryAddress {
 
     public String getBankDetailsBIC(){
         return  responseXML.get("Envelope.Body.getBankResponse.details.bic").toString();
+    }
+    public Boolean checkIfBICNodeIsPresent(){
+       // Node dd = responseXML.getNode("Envelope.Body.getBankResponse.details.bic");
+       // System.out.println(dd);
+        return  responseXML.get("Envelope.Body.getBankResponse.details.bic").toString().equals("DEUTDEDE350");
     }
 
 }

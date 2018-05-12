@@ -1,0 +1,6 @@
+esdc\com\project\test\queryAppointment.class
+esdc\com\common\xmlReader.class
+esdc\com\common\httpStatusHelper.class
+esdc\com\common\propertyReader.class
+esdc\com\project\test\queryAddress.class
+esdc\com\common\restUtil.class

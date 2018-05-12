@@ -1,0 +1,4 @@
+esdc\com\tvtTestRunner.class
+esdc\com\stepDefs\queryAddressSteps.class
+esdc\com\stepDefs\thomasBayerBankSteps.class
+esdc\com\stepDefs\queryAppointmentSteps.class

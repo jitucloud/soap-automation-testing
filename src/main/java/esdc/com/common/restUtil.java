@@ -7,6 +7,7 @@ import com.jayway.restassured.response.Response;
 import java.io.File;
 import static com.jayway.restassured.RestAssured.get;
 import static com.jayway.restassured.RestAssured.given;
+import static com.jayway.restassured.config.XmlConfig.xmlConfig;
 
 public class restUtil {
 
@@ -42,7 +43,8 @@ public class restUtil {
     }
 
     public static void setSoapActionHeader (String ActionName){
-        given().header("SOAPAction",ActionName);
+        given().config(RestAssured.config().xmlConfig(xmlConfig()
+                .declareNamespace("ns1", "http://thomas-bayer.com/blz/"))).header("SOAPAction",ActionName);
     }
 
     public static Response getResponseAsGet() {
